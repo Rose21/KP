@@ -1,0 +1,12 @@
+
+<!ELEMENT note (tytul, autors, spis_tresci)>
+        <!ELEMENT tytul (#PCDATA)>
+        <!ELEMENT autors (autor, autor)>
+                <!ELEMENT autor (#PCDATA)>
+        <!ELEMENT spis_tresci (rozdzial*)>
+                <!ELEMENT rozdzial (name, page, fragment?)>
+                        <!ELEMENT name (#PCDATA)>
+                        <!ELEMENT page (#PCDATA)>
+                        <!ELEMENT fragment (orginal, tlumaczenie)>
+                                <!ELEMENT orginal (#PCDATA)>
+                                <!ELEMENT tlumaczenie (#PCDATA)>

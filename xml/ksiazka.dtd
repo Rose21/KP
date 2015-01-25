@@ -1,0 +1,13 @@
+<!ELEMENT ksiazka (tytul_ksiazki, autor*,wprowadzenie,rozdzial+)>
+        <!ELEMENT autor (#PCDATA)>
+        <!ELEMENT tytul_ksiazki (#PCDATA)>
+        <!ELEMENT wprowadzenie (#PCDATA)>
+        <!ELEMENT rozdzial (tytul_rozdzialu,nr_strony,sekcja+)>
+                <!ELEMENT  tytul_rozdzialu (#PCDATA) >
+                <!ELEMENT nr_strony (#PCDATA)>
+                <!ELEMENT sekcja (tytul_sekcji,akapit*)>
+                        <!ELEMENT tytul_sekcji (#PCDATA)>
+                        <!ELEMENT akapit (#PCDATA)>
+
+<!ATTLIST autor         imie       NMTOKEN     #REQUIRED
+                    nazwisko NMTOKEN       #REQUIRED>

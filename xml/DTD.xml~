@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE ksiazka [
+        <!ELEMENT ksiazka (tytul_ksiazki, autor*,wprowadzenie,rozdzial+)>
+        <!ELEMENT autor (#PCDATA)>
+        <!ELEMENT tytul_ksiazki (#PCDATA)>
+        <!ELEMENT wprowadzenie (#PCDATA)>
+        <!ELEMENT rozdzial (tytul_rozdzialu,nr_strony,sekcja+)>
+                <!ELEMENT  tytul_rozdzialu (#PCDATA) >
+                <!ELEMENT nr_strony (#PCDATA)>
+                <!ELEMENT sekcja (tytul_sekcji,akapit*)>
+                        <!ELEMENT tytul_sekcji (#PCDATA)>
+                        <!ELEMENT akapit (#PCDATA)>
+
+<!ATTLIST autor         imie       NMTOKEN     #REQUIRED
+                    nazwisko NMTOKEN       #REQUIRED>
+]>
+
+<ksiazka>
+        <tytul_ksiazki>Wystrzalowa dziewiatka</tytul_ksiazki>
+        <autor imie="Evanovich" nazwisko="Janet">
+                
+        </autor>
+        <wprowadzenie>cos tam cos tam</wprowadzenie>
+        <rozdzial>
+                <tytul_rozdzialu>cos ktos</tytul_rozdzialu>
+                <nr_strony>20ll</nr_strony>
+                <sekcja>
+                        <tytul_sekcji>Hiszpania</tytul_sekcji>
+                        <akapit>cos cos</akapit>
+                </sekcja>
+        </rozdzial>
+        
+        <rozdzial>
+                <tytul_rozdzialu>ktos cos</tytul_rozdzialu>
+                <nr_strony>19</nr_strony>
+                <sekcja>
+                        <tytul_sekcji>Plaza</tytul_sekcji>
+                        <akapit>cos cos</akapit>
+                        <akapit> kslddl lll</akapit>
+                </sekcja>
+        </rozdzial>
+</ksiazka>

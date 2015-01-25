@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE ksiazka [
+        <!ELEMENT ksiazka (tytul_ksiazki, autor*,wprowadzenie,rozdzial+)>
+        <!ELEMENT autor (#PCDATA)>
+        <!ELEMENT tytul_ksiazki (#PCDATA)>
+        <!ELEMENT wprowadzenie (#PCDATA)>
+        <!ELEMENT rozdzial (tytul_rozdzialu,nr_strony,sekcja+)>
+                <!ELEMENT  tytul_rozdzialu (#PCDATA) >
+                <!ELEMENT nr_strony (#PCDATA)>
+                <!ELEMENT sekcja (tytul_sekcji,akapit*)>
+                        <!ELEMENT tytul_sekcji (#PCDATA)>
+                        <!ELEMENT akapit (#PCDATA)>
+
+<!ATTLIST autor         imie       NMTOKEN     #REQUIRED
+                    nazwisko NMTOKEN       #REQUIRED>
+]>
+
+<ksiazka>
+        <tytul_ksiazki>Eona. Ostatni lord Smocze Oko.</tytul_ksiazki>
+        <autor imie="Alison" nazwisko="Goodman">
+                
+        </autor>
+        <wprowadzenie>Tutaj jest tekst wprowadzenia</wprowadzenie>
+        <rozdzial>
+                <tytul_rozdzialu>A tutaj jest tytuł rozdziału</tytul_rozdzialu>
+                <nr_strony>Oraz Sterona</nr_strony>
+                <sekcja>
+                        <tytul_sekcji>Hiszpania</tytul_sekcji>
+                        <akapit></akapit>
+                </sekcja>
+        </rozdzial>
+        
+        <rozdzial>
+                <tytul_rozdzialu>Kolejny rozdział</tytul_rozdzialu>
+                <nr_strony>I kolejna strona</nr_strony>
+                <sekcja>
+                        <tytul_sekcji>Plaza</tytul_sekcji>
+                        <akapit>Coś co znajduje się w danej sekcji</akapit>
+                        <akapit>I znowu coś co znajduje się w sekcji</akapit>
+                </sekcja>
+        </rozdzial>
+</ksiazka>
