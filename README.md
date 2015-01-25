@@ -1,10 +1,5 @@
-# KP
-<<<<<<< HEAD
-Kurs programowania, domyślnie wrzucona lista 3 i 5.
- 
-=======
 Kurs programowania, domyślnie wrzucona lista 3 i 5. 
 
-23.01 - wrzucone wzorce, TODO: diagram UML, sprawdzić na win, czy wszystko działa
+23.01 - wrzucone wzorce, TODO: diagram UML, sprawdzić na win, czy wszystko działa (powinno dzialac, nie wykryl mi eclipse bledow)
 
->>>>>>> 82de1a029b15f57339758406b602bf3050040d2c
+24.01 - wrzucone 1 i 2 zadanie z androida, uml, i tyle TODO: zrobic zadanie 3,4.
